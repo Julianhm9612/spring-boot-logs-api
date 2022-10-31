@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  custom-logs:
+    image: spring-boot-logs-api:1.0.0
+    container_name: spring-boot-logs-api
+    restart: always
+    ports:
+      - 8036:8036
+    environment:
+      - DB_URL=jdbc:postgresql://host.docker.internal:5432/logs
+      - DB_USERNAME=test
+      - DB_PASSWORD=test
+    volumes:
+      - /Users/julian.henao.marin/Documents/Personal/Charlas/logs:/logs/
