@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "ea6e8113-8cf4-4a23-b5f2-1e7c572d2c31",
+		"name": "Logs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21580616"
+	},
+	"item": [
+		{
+			"name": "Temperature",
+			"item": [
+				{
+					"name": "Get temperatures",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8036/logs/api/temperature",
+							"host": [
+								"localhost"
+							],
+							"port": "8036",
+							"path": [
+								"logs",
+								"api",
+								"temperature"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save temperature",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"identification\": \"73627482747744\",\n    \"temp\": 36.0,\n    \"country\": \"AR\",\n    \"coordinates\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          -58.381592,\n          -34.603722\n        ]\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8036/logs/api/temperature",
+							"host": [
+								"localhost"
+							],
+							"port": "8036",
+							"path": [
+								"logs",
+								"api",
+								"temperature"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8036/logs/api/info",
+					"host": [
+						"localhost"
+					],
+					"port": "8036",
+					"path": [
+						"logs",
+						"api",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8036/logs/api/error",
+					"host": [
+						"localhost"
+					],
+					"port": "8036",
+					"path": [
+						"logs",
+						"api",
+						"error"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trace",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8036/logs/api/trace",
+					"host": [
+						"localhost"
+					],
+					"port": "8036",
+					"path": [
+						"logs",
+						"api",
+						"trace"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
